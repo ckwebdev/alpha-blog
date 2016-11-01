@@ -1,0 +1,97 @@
+<style>
+  .header {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 75px; 
+    width: 100%;
+  }
+
+  .footer {
+    font-weight: bold;
+    padding-top: 500px;
+    width: 100%;
+  }
+  
+  .hr-footer {
+    width: 25%;
+  }
+  
+  body {
+    background-image: url("/assets/homepage3.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Gabriola';
+  } 
+  
+  h1 {
+    font-size: 56px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h1, h2, p, footer {
+    text-align: center;
+  }
+  
+  hr {
+    background: #93d2d8;
+    border-color: #93d2d8;
+    width: 60%;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  form.button_to {
+    text-align: center;
+  }
+  
+  input {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid;
+    color: #93d2d8;
+    display: inline-block;
+    font-size: 16px;    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  input:hover {
+    background-color: #547dbf;
+  }
+
+</style>
+
+<div class="header">
+  <header>
+    <h1>Welcome To The Bloggers Paradise</h1>
+  </header>
+</div>
+
+<hr size="6" />
+
+<div class="content">
+  <p>
+    <h2>Free your mind!, Share your thoughts!, Expand your horizon!</h2>
+  </p>
+</div>
+  
+  <div>
+    <%= button_to 'Back to Home', root_path, method: :link_to %>
+    
+  </div>
+  <%= link_to 'Home', root_path %>
+<div class="footer">
+  <hr size="6" class="hr-footer"/>
+  
+  <footer>&#169 SoloWeb Industries 2016. All Rights Reserved.</footer>
+</div>

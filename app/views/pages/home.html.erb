@@ -1,0 +1,95 @@
+<style>
+  body {
+    background-image: url("/assets/homepage3.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Gabriola';
+  }
+  
+  .header {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 75px; 
+    width: 100%;
+    color: #ffdb99;
+  }
+
+  .footer {
+    font-weight: bold;
+    padding-top: 425px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 56px;
+  }
+  
+  h1, h2, p, footer {
+    text-align: center;
+  }
+  
+  hr {
+    background: #93d2d8;
+    border-color: #93d2d8;
+    width: 60%;
+  }
+  
+  p {
+    font-size: 20px;
+    color: #ffdb99;
+  }
+  
+  .hr-footer {
+    width: 25%;
+  }
+  
+  form.button_to {
+    text-align: center;
+  }
+  
+  input {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid;
+    color: #93d2d8;
+    display: inline-block;
+    font-size: 16px;    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  input:hover {
+    background-color: #547dbf;
+  }
+
+</style>
+
+<div class="header">
+  <header>
+    <h1>A BLOGGERS' PARADISE...</h1>
+  </header>
+</div>
+
+<hr size="6" />
+
+<div class="content">
+  <h2>"The thinker dies, but his thoughts are beyond the reach of destruction.</h2>
+  <h2>Men are mortal; but ideas are immortal." -- Richard Adams</h2>
+
+ 
+</div>
+
+  <p>
+    <%= button_to 'A Bloggers Paradise Welcomes You Inside!', about_path, method: :get %>
+    
+  </p>
+<%= link_to 'About', about_path %>
+
+<div class="footer">
+  <hr size="6" class="hr-footer"/>
+  
+  <footer>&#169 SoloWeb Industries 2016. All Rights Reserved.</footer>
+</div>
